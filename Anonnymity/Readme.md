@@ -45,7 +45,7 @@ python mac_changer.py -i eth0 -m 00:11:22:33:44:55
 - [Python optparse module documentation](https://docs.python.org/2/library/optparse.html)
 
 ## Author
-Vishesh singh
+Vishesh Singh
 
 ## License
 This script is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
@@ -54,4 +54,4 @@ This script is licensed under the MIT License. See the [LICENSE](LICENSE) file f
 - [Version 1.0](https://github.com/your-username/mac-changer/releases/tag/v1.0): Initial release
 
 ## Feedback
-If you have any feedback or suggestions for improving this script, please open an issue on the [GitHub repository](https://github.com/visheshoffice/cybersecurity-projects/issues).
+If you have any feedback or suggestions for improving this script, please open an issue on the [GitHub repository](https://github.com/visheshoffice/cybersecurity-projects/).

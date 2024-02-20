@@ -10,14 +10,14 @@ class Scanner:
 		self.target_links = []
 		self.links_to_ignore = ignore_links
 	
-	def extarct_links_from(self, url):	
+	def extract_links_from(self, url):	
 		response = self.session.get(target_url)
 		return re.findall('(?:href=")(.*?)"', response.content)
 
 	def crawl(self, url = None):
 		if url == None:
 			url = self.target_url
-		href_links = self.extarct_links_from(url)
+		href_links = self.extract_links_from(url)
 		for link in href_links:
 			link = urlparse.urljoin(url, link)
 

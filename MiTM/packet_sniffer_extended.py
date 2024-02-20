@@ -32,7 +32,7 @@ def get_arguments():
 	parser.add_argument("-i", "--interface", dest="interface", help="Input the interface who's value need to be changed")
 	options = parser.parse_args()
 	if not options.interface:
-		parser.error("please enter an interface vale (Use --help to know more)")
+		parser.error("please enter an interface value (Use --help to know more)")
 	return options
 
 options=get_arguments()

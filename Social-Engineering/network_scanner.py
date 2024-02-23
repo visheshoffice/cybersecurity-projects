@@ -11,7 +11,7 @@ def scan(ip):
 	arp_request = scapy.ARP(pdst=ip)
 	broadcast = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")
 	final_packet = broadcast/arp_request
-	answered_list = scapy.srp(final_packet, timeout=1, verbose=False)[0]
+	answered_list = scapy.srp(final_packet, iface="eth0" ,timeout=5, verbose=True)[0]
 	
 	clients_list=[]
 	for element in answered_list:
@@ -26,5 +26,4 @@ def printing(result_list):
 
 options=get_arguments()
 scan_result= scan(options.target)
-print(options.target)
 printing(scan_result)
